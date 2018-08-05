@@ -1,0 +1,22 @@
+{
+	"virtual": true,
+	"fields": [
+	],
+	"relations": [],
+	"queries": [
+		{
+			"id": "me",
+			"type": "custom",
+			"opts": {
+				"params": [
+					{
+						"name": "access_token",
+						"type": "text",
+						"required": true
+					}
+				],
+				"action": "me"
+			}
+		}
+	]
+}

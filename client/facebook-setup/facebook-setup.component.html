@@ -1,0 +1,26 @@
+<form [formGroup]="settingsForm" fxLayout="column" fxLayoutAlign="center center">
+	<h2 mat-dialog-title fxLayout="row">
+		<span style="position: relative; top: 3px; left: 5px;">Facebook</span>
+		<span fxFlex></span>
+		<button (click)="close()" tabindex="-1" mat-icon-button>
+			<mat-icon>close</mat-icon>
+		</button>
+	</h2>
+
+	<mat-form-field flex>
+		<input matInput placeholder="App id" formControlName="app_id">
+	</mat-form-field>
+	<mat-form-field flex>
+		<input matInput placeholder="App secret" formControlName="app_secret">
+	</mat-form-field>
+
+	<h3 style="padding-bottom: 0; margin-bottom: 0; margin-top: 16px" class="text-center">
+		<mat-checkbox formControlName="social_connect">User management</mat-checkbox>
+	</h3>
+	<mat-hint>requires @materia/users addon</mat-hint>
+
+	<div fxLayout="row" style="margin-top: 16px;">
+		<button mat-raised-button color="primary" (click)="saveClick()">Save</button>
+		<button mat-raised-button (click)="close()">cancel</button>
+	</div>
+</form>
