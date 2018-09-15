@@ -4,7 +4,7 @@ import { FacebookAuth } from './auth/facebook-auth';
 export default class Facebook {
   public static displayName = 'Facebook';
   public static logo =
-    'https://thyb.github.io/materia-website-content/logo/addons/facebook.png';
+    'https://materiahq.github.io/materia-website-content/logo/addons/facebook.png';
 
   public static installSettings = false;
 

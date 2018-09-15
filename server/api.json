@@ -1,23 +1,2 @@
 [
-  {
-    "method": "post",
-    "url": "/connect/facebook",
-    "controller": "auth",
-    "action": "connect",
-    "parent": "Facebook",
-    "params": [
-      {
-        "name": "callback",
-        "type": "text",
-        "required": true,
-        "component": "input"
-      },
-      {
-        "name": "scope",
-        "type": "text",
-        "required": true,
-        "component": "input"
-      }
-    ]
-  }
 ]
