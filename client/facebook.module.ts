@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import {
   MatButtonModule,
@@ -40,8 +39,7 @@ import { FacebookSetupComponent } from './facebook-setup/facebook-setup.componen
     MatInputModule,
     MatTooltipModule,
     MatListModule,
-    MatCheckboxModule,
-    NgxChartsModule
+    MatCheckboxModule
   ],
   declarations: [FacebookViewComponent, FacebookSetupComponent],
   exports: [FacebookViewComponent],
