@@ -1,10 +1,19 @@
-<div fxLayout="column">
-	<mat-card>
-		<div style="padding-bottom: 16px; border-bottom: 1px solid #EEE;">This addon allow you to connect your users via a Facebook login button.</div>
-		<div style="margin-top: 16px">Use the Facebook SDK to fetch an access token for your users and send it to your server to connect your user to their
+<div fxLayout="column" fxFlex  fxLayoutAlign="center center" *ngIf="settings?.app_id && settings?.app_secret; else noSettings">
+	<mat-card fxLayout="column">
+		<div>Use the Facebook SDK to fetch an access token for your users and send it to your server to connect your user to their
 		account using their Facebook account.</div>
-		<pre style="text-align: left;">
+		<pre>
 			POST /api/user/signin/facebook
 		</pre>
 	</mat-card>
 </div>
+<ng-template #noSettings>
+	<mat-card fxFlex fxLayout="column" fxLayoutAlign="center center">
+		<span><strong>@materia/facebook</strong> addon is not configured yet</span>
+		<div>
+			<button (click)="openSetup.emit()" mat-raised-button color="primary" [style.margin]="'15px'" [style.color]="'white'">
+				Setup
+			</button>
+		</div>
+	</mat-card>
+</ng-template>

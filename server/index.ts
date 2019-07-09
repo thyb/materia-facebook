@@ -21,7 +21,9 @@ export default class Facebook {
   }
 
   start() {
-    this.auth = new FacebookAuth(this.app, this.settings);
+    if (this.settings && this.settings.app_id && this.settings.app_secret) {
+      this.auth = new FacebookAuth(this.app, this.settings);
+    }
     return Promise.resolve();
   }
 
