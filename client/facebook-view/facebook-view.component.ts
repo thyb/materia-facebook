@@ -9,7 +9,8 @@ import {
 } from '@angular/core';
 import { AddonView } from '@materia/addons';
 import { HttpClient } from '@angular/common/http';
-import { MatSnackBar, MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @AddonView('@materia/facebook')
 @Component({

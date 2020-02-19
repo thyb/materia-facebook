@@ -3,18 +3,16 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import {
-  MatButtonModule,
-  MatRippleModule,
-  MatSnackBarModule,
-  MatCardModule,
-  MatIconModule,
-  MatDialogModule,
-  MatInputModule,
-  MatListModule,
-  MatTooltipModule,
-  MatCheckboxModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRippleModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { Addon } from '@materia/addons';
 
@@ -42,7 +40,7 @@ import { FacebookSetupComponent } from './facebook-setup/facebook-setup.componen
     MatCheckboxModule
   ],
   declarations: [FacebookViewComponent, FacebookSetupComponent],
-  exports: [FacebookViewComponent],
+  exports: [FacebookViewComponent, FacebookSetupComponent],
   entryComponents: []
 })
 export class FacebookModule {}
