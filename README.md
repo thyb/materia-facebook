@@ -1,17 +1,14 @@
-# Materia - Addon Boilerplate
+# Materia - Facebook Addon
 
-Starter kit to create a Materia Addon.
+Integrate Facebook connect to your Materia applications
 
 ## Features
 
-- Minimal server
-- Default addon view (Angular 6 + Angular Material)
-- **Custom setup dialog**
-- Build system (@angular/cli + ng-packagr + TypeScript + Sass)
+- Generate the endpoint to signin your users with Facebook (works in addition of @materia/users addon)
 
 ## Installation from NPM
 
-In your Materia application, run `yarn add @materia/addon-boilerplate`
+In your Materia application, run `yarn add @materia/facebook`
 
 Restart Materia Designer
 
@@ -20,27 +17,19 @@ Restart Materia Designer
 Clone this repository:
 
 ```
-git clone git@github.com:thyb/materia-addon-boilerplate.git
-cd materia-addon-boilerplate
+git clone git@github.com:materiahq/materia-facebook.git
+cd materia-facebook
 ```
 
 Then install dependencies and build:
 
 ```
 yarn
-yarn build
+yarn build:prod
 ```
 
-To test your addon locally before publishing it to NPM, use `npm link`:
+then, in your application, you can install the materia-facebook dist folder:
 
 ```
-cd dist && npm link
+npm install /path/to/materia-facebook/dist
 ```
-
-and in your materia application
-
-```
-npm link @materia/addon-boilerplate
-```
-
-then add `"@materia/addon-boilerplate": "^1.0.0"` in the dependencies of the package.json - it will let Materia knows of the existance of the addon.
