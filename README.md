@@ -31,5 +31,5 @@ yarn build:prod
 then, in your application, you can install the materia-facebook dist folder:
 
 ```
-npm install /path/to/materia-facebook/dist
+yarn add /path/to/materia-facebook/dist
 ```
